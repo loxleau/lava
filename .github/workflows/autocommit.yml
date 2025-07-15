@@ -10,7 +10,7 @@ on:
   - cron: "*/15 * * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
 
 jobs:
- # auto_commit:
+  auto_commit:
     runs-on: ubuntu-latest
     steps:
       - name: DEBUG 
@@ -27,9 +27,9 @@ jobs:
           
       - name: Commit changes
         run: |
-        #  git config --local user.email "pocinkomik@gmail.com"
-        #  git config --local user.name "loxleau"
-        #  git add -A
+          git config --local user.email "pocinkomik@gmail.com"
+          git config --local user.name "loxleau"
+          git add -A
           
           arr[0]="🟢 auto commit"
           arr[1]="🟠 auto commit"
